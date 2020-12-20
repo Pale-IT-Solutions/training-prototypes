@@ -6,9 +6,8 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon"
-	href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png"
+	href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-16x16.png"
 	sizes="16x16" type="image/png">
-
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
@@ -16,16 +15,93 @@
 	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	crossorigin="anonymous">
 
-<title></title>
+<title>Emp-Edit</title>
 </head>
+
 <body>
-	<h1>Hello, world!</h1>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a class="navbar-brand text-uppercase" href="#">Training Demo</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarsExample03" aria-controls="navbarsExample03"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-
-
-
-
-
+		<div class="collapse navbar-collapse" id="navbarsExample03">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link"
+					href="002-home.html">Home <span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="010-company-list.html">Company</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="020-dept-list.html">Department</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="030-emp-list.html">Employee</a></li>
+			</ul>
+			<div class="form-inline my-2 my-md-0">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle " href="#" id="dropdown03"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#UserName</a>
+						<div class="dropdown-menu dropdown-menu-right"
+							aria-labelledby="dropdown03">
+							<a class="dropdown-item" href="#">Change Email</a> <a
+								class="dropdown-item" href="004-change-pwd.html">Change Password</a> <a
+								class="dropdown-item" href="#">Logout</a>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>Employee Edit</h4>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<form>
+						<div class="form-group">
+							<label for="txtEmployeeName">Employee Name</label> <input
+								type="text" class="form-control" id="txtEmployeeName">
+						</div>
+						<div class="form-group">
+							<label for="cboPosition">Position</label> <select
+								class="form-control" id="cboPosition">
+								<option>Select One</option>
+								<option>Software Engineer</option>
+								<option>Programmer</option>
+								<option>Network Engineer</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="txtAddress">Address</label>
+							<textarea class="form-control" id="txtAddress" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="txtPhoneNumber">Phone Number</label> <input
+								type="text" class="form-control" id="txtPhoneNumber">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label> <input type="email"
+								class="form-control" id="email" placeholder="name@example.com">
+						</div>
+						<div class="form-group">
+							<label for="txtPassword">Password</label> <input type="text"
+								class="form-control" id="txtPassword">
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-secondary">Add</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
 
 	<!-- Optional JavaScript; choose one of the two! -->
 
